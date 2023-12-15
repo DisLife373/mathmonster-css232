@@ -28,6 +28,7 @@ public class BattleHandler : MonoBehaviour
     [SerializeField] private HealthBar phealth;
     [SerializeField] private HealthBar ehealth;
     [SerializeField] private GameObject endgame_panel;
+    [SerializeField] private GameObject guide_frame;
     [SerializeField] private List<Image> stars;
     [SerializeField] private Sprite star;
     [SerializeField] private Sprite star_blank;
@@ -100,6 +101,7 @@ public class BattleHandler : MonoBehaviour
         phealth.SetMaxHealth(player.GetMaxHP());
         phealth.SetHealth(player.GetHP());
 
+        guide_frame.SetActive(false);
 
         signDict = new Dictionary<char, int>
         {
@@ -196,6 +198,14 @@ public class BattleHandler : MonoBehaviour
         Main.instance.Load(Main.Scene.Menu);
         pause_panel.SetActive(false);
         FindObjectOfType<AudioManager>().PlaySound("MenuBG");
+    }
+
+    public void OpenGuide() {
+        guide_frame.SetActive(true);
+    }
+
+    public void CloseGuide() {
+        guide_frame.SetActive(false);
     }
     
 
