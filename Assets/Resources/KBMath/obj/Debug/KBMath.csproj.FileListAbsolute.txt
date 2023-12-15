@@ -1,0 +1,5 @@
+C:\A.BackupForCarolineLaptop\Wpf\MathExpressions\KBMath\obj\Debug\KBMath.csprojResolveAssemblyReference.cache
+C:\A.BackupForCarolineLaptop\Wpf\MathExpressions\KBMath\bin\Debug\KBMath.dll
+C:\A.BackupForCarolineLaptop\Wpf\MathExpressions\KBMath\bin\Debug\KBMath.pdb
+C:\A.BackupForCarolineLaptop\Wpf\MathExpressions\KBMath\obj\Debug\KBMath.dll
+C:\A.BackupForCarolineLaptop\Wpf\MathExpressions\KBMath\obj\Debug\KBMath.pdb
