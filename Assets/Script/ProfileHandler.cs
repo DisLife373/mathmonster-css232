@@ -150,6 +150,10 @@ public class ProfileHandler : MonoBehaviour
                 FindObjectOfType<AudioManager>().PlaySound("Error");
                 username_txt.text = "Can't Edit.";
             }
+            else if (www.downloadHandler.text.Contains("This username already exits.")) {
+                FindObjectOfType<AudioManager>().PlaySound("Error");
+                username_txt.text = "Already Exits.";
+            }
             else {
                 FindObjectOfType<AudioManager>().PlaySound("Error");
                 Debug.Log(www.downloadHandler.text);
